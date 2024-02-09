@@ -7,7 +7,13 @@
 
 <body>
     <script>
-        alert(window.location.href);
+        const base_uri = 'https://schmar00.github.io/rewrite/';
+        let new_uri = 'https://pv.geoinformation.dev';
+        if (window.location.href !== base_uri){
+            new_uri += '?uri=' + window.location.href;
+        }
+        alert(window.location.href + ' redirect to ' + new_uri);
+
         window.location.replace('https://pv.geoinformation.dev/?uri=' + 'https://voc.europe-geology.eu/geoconnect3d/geomanifestation/9737');//window.location.href);
     </script>
 </body>
