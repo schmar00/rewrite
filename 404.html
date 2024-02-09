@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>404 TEST</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="a.js"></script>
+    <title>forward URI</title>
 </head>
 
 <body>
-
-    <p>404 FEHLER</p>
-    <div id="text"></div>
     <script>
-        $('#text').text(window.location.href);
+        //$('#text').text(window.location.href);
+        window.location.replace('https://pv.geoinformation.dev/?uri=' + 'https://voc.europe-geology.eu/geoconnect3d/geomanifestation/9737');//window.location.href);
     </script>
 </body>
 
